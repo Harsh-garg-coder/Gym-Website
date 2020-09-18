@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" type="text/css">
+</head>
+
+<body>
+    <!-- login form -->
+    <div id="login-box">
+        <div id="login-form">
+            <span id="cross">+</span>
+            <form>
+                <div>
+                    <input type="text" id="name" placeholder="Username">
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="PAssword">
+                </div>
+                <button class="button" id="inside-login-button">
+                    Log In
+                </button>
+                <a href="">Foget Password?</a>
+            </form>
+        </div>
+    </div>
+
+    <!--Sing up box  -->
+    <div id="signup-box">
+        <div id="signup-form">
+            <span id="cross2">+</span>
+            <form>
+                <div>
+
+                    
+                    <input type="text" id="name2" placeholder = "Name">
+                </div>
+                <div>
+
+                    
+                    <input type="email" id="email2" placeholder="Email">
+                </div>
+                <div>
+
+                    
+                    <input type="password" id="set-password" placeholder="Set Password">
+                </div>
+                <div>
+
+                    
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+
+                <p>
+
+                    <label for="male">Gender:</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+
+                </p>
+
+                <button class="button" id="inside-signup-button">
+                    Create Acoount
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header id="header">
+        <div id="logo">
+            <img src="img/gymlogo.jpg" alt="" title="Be Healthy">
+            <h1 title="Be Healthy">Stay Fit</h1>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="diet.html"><i class="fas fa-utensils"></i> Diet</a></li>
+                <li><a href="gymEquipments.html"><i class="fas fa-dumbbell"></i> Gym Equipments</a></li>
+            </ul>
+        </nav>
+        <div id="register">
+            <button id="login-btn" class="button">Log in</button>
+            <button id="signup-btn" class="button">Sign up</button>
+        </div>
+        <i class="fas fa-bars " id="hamberger"></i>
+    </header>
+
+    <!-- addpost portion -->
+    <div id="add-question-box">
+
+        
+            <h2>Ask Question</h2>
+            <div>
+                <label  for="add-question-name-input"id="add-question-name-label">Name</label>
+                <input type="text" id="add-question-name-input">
+            </div>
+            <div>
+                <label for="add-question-textarea" id="add-question-textarea-label">Enter the Question</label>
+                <textarea id="add-question-textarea"></textarea>
+            </div>
+            <button class="button" id="add-question-btn">Add Question</button>
+
+       
+    </div>
+
+    <!-- middle section -->
+    <div id="middle-section">
+        <div id="question-box-area">
+            <div class="questions">
+                <div class="profile">
+                    <img src="img/avatar.png" alt="" class="profile-image">
+                    <h3>Harsh garg</h3>
+                </div>
+                <div class="content">
+
+                    <p class="caption">How to loss weight without loosing muscles?</p>
+
+                </div>
+                <div class="response">
+                    <p class="left" >View Answers</p>
+                    
+                    <p class="right" id="right0">Answer(0)</p>
+                    <div class="clearfix">
+                    
+                    </div>
+                </div>
+                <div class="answer-box" id="answer-box0">
+                    <p>Answers:</p>
+                    
+                    <div  class="comment" id="comment0">
+                        
+                           
+                    </div>
+                    
+                    <div class="add-answer-div">
+
+                        <span class="add-answer">Add Answer</span>
+                    </div>
+                    <div class="add-answer-box" id="add-answer-box0">
+
+                    <div id="form">
+
+                        <div>
+                            
+                            <input type="text" placeholder="Username" id="name0">
+                        </div>
+                        <div>
+                            
+                            <input type="text" placeholder="Answer" id="answer0">
+                        </div>
+                        <button class="button post-answer-button" >
+                            Post answer
+                        </button>
+                    </div>
+                    
+                </div>
+
+
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <div id="knowledge">
+            <h2>Some Basic Knowledge</h2>
+            <ul>
+                <li><a href="https://www.verywellfit.com/everything-you-need-to-know-about-cardio-1229553" >Cardio</a></li>
+                <li><a
+                        href="https://www.livescience.com/55324-strength-exercise.html#:~:text=Strength%20exercise%2C%20or%20resistance%20training,than%20other%20types%20of%20tissue.">Strength
+                        Training</a></li>
+                <li><a href="https://www.healthline.com/health/fitness-exercise/how-to-increase-stamina" >Tips to
+                        increase Stamina</a></li>
+
+            </ul>
+            <!-- <img src="img/food.jpeg" alt=""> -->
+        </div>
+        <div id="food">
+            <h2>Felling Hungry</h2>
+            <a href="https://www.zomato.com/ncr"><img src="img/food.jpeg" alt=""></a>
+        </div>
+        <aside id="right">
+            <h2>Want To join Gym</h2>
+            <ul>
+                <li><a href="https://goldsgym.in/">Gold gym</a></li>
+
+                <li><a href="https://www.ozoneclubs.com/">Ozone fitness</a></li>
+                <li><a href="https://www.fitternity.com/fluid-fitness-old-rajendra-nagar">Fluid fitness</a></li>
+                <li><a href="http://www.solaris.in/">Solaris</a></li>
+                <li><a href="https://fitpass.co.in/studio/fitness-one-chattarpur">Fitness One</a></li>
+                <li><a href="https://48fitness.in/">48 Fitness</a></li>
+                <li><a href="https://www.anytimefitness.co.in/">Anytime Fitness</a></li>
+                <li><a href="http://www.talwalkars.net/">Talwalkars</a></li>
+
+
+
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="follow-us">
+            
+            <a href="https://www.facebook.com/Stayfit.always12/"><i class="fab fa-facebook fa-2x" style="color:#1a73e8;"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x" style="color:rgb(245, 98, 122);"></i></a>
+            
+            
+            <a href="http://linkedin.com/in/stayfit-0623131b4"><i class="fab fa-linkedin fa-2x"></i></a>
+
+         </div>
+         <div id="contact-us">
+            <span><a href="mailto:mailto:always.stayfit12@gmail.com">Contact us</a> </span>
+           
+        </div>
+         <div id="copyright">
+             Copyright &copy; Harsh garg,2020
+         </div>
+         
+    </footer>
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,644 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+body{
+     background-color:#F2F3F5;
+     
+    
+}
+/* ------------------------------------designing header ---------------------------------*/
+header{
+    box-shadow:0px 2px 10px grey;
+    height:60px;
+    position:sticky;
+    top:0px;
+    overflow:hidden;
+    background-color:white;
+    z-index:1;
+}
+#hamberger{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:25px;
+    display:none;
+}
+header #logo img{
+    width:128px;
+    position:absolute;
+    z-index:-1;
+    left:100px;
+    top:-20px;
+}
+header #logo h1{
+    display:inline-block;
+    padding:6px 0px 0px 200px;
+}
+#main-nav{
+    position:absolute;
+    right:300px;
+    top:0px;
+}
+#main-nav ul{
+    display:flex;
+    list-style:none;
+}
+#main-nav ul li{
+    padding:12px 20px 4px 20px;   
+}
+
+#main-nav ul li a{    
+    text-decoration:none; 
+    font-size:20px;
+    color:black;
+}
+
+#main-nav ul li:hover{
+    border-bottom:2px solid blue;
+    
+}
+#main-nav ul li:hover a{
+    color:blue;
+}
+#register{   
+    position:absolute;
+    top:15px;
+    right:50px;   
+}
+
+
+
+/* ----------------------------OPENING OF ADD Question PORTION --------------------------------*/
+#add-question-box{
+    width:50%;
+    border:2px solid #ccc;
+    margin:30px auto;
+    padding:20px;
+    box-sizing:border-box;
+    border-radius:8px;
+    background-color:white;
+    box-shadow:1px 1px 10px grey;
+}
+#add-question-box h2{
+    text-align:center;
+}
+#add-question-box div{
+    position:relative;
+    box-sizing:border-box;
+    width:80%;
+    margin:0px auto 20px auto;
+}
+#add-question-box label{
+    font-weight:bold;
+    font-size:18px;
+    top:5px;
+    position:absolute;
+    left:20px;
+    transition-duration:0.2s;
+}
+#add-question-box div input{
+    width:100%;
+    height:40px;
+    padding:2px 10px 2px 20px;
+    box-sizing:border-box;
+    font-size:16px;
+    outline:none;
+}
+#add-question-box textarea{
+    outline:none;
+    display:block;
+    box-sizing:border-box;
+    padding:4px 10px 4px 20px;
+    width:100%;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+ #add-question-box button{
+    display:block;
+    width:150px;
+    margin:10px auto;
+}
+/* ------------------------------CLOSING OF ADD question PORTION----------------------------- */
+
+/*------------------------------- designing aside */
+#follow-us{   
+    box-sizing:border-box;
+    /* border:2px solid red; */
+}
+#follow-us div i{
+    transition:0.5s;
+}
+#follow-us div i:hover{
+    font-weight:bold;
+    font-size:34px;
+}
+
+/* designing section */
+#question-box-area{
+    box-sizing:border-box;
+    width:50%;
+    border-radius:8px;
+    margin:50px auto; 
+    background-color:white;
+    box-shadow:1px 1px 10px grey;
+    padding:10px;
+}
+
+.profile{
+    padding:10px 10px 0px 10px;
+}
+
+.content{
+    padding:10px 10px 20px 30px;
+}
+.profile-image{
+    width:50px;
+    border-radius:50%;
+}
+.profile h3{
+    display:inline-block;
+    position:relative;
+    top:-20px;
+    left:20px;
+}
+.response{
+    padding:5px 10px;
+    margin:5px 0px 0px 0px;
+    background-color:#1a73e8;
+}
+.response p{
+    color:white;
+    padding:0px 20px;
+    display:inline-block;
+    cursor:pointer;
+    font-size:18px;
+}
+.response p.left:hover{
+    border:1px solid white;
+    border-radius:8px;
+    font-size:17px;
+}
+.answer-box{
+    padding:0px 20px;
+    display:none;
+}
+.answers{
+    margin:0px 10px;
+    padding:10px 0px;
+    border-bottom:1px dotted #ccc;
+}
+.answer-box >p{
+    margin:10px 0px;
+    
+}
+.answer-profile{
+    padding:5px 0px;
+    /* border:2px solid black; */
+    /* position:relative; */
+    display:flex;
+    box-sizing:border-box;
+}
+.answer-profile img{
+    /* border:2px solid green; */
+    border-radius:50%;
+    width:32px;
+}
+.answer-profile p{
+    padding-left:12px;
+    display:inline-block;
+    /* border:2px solid blue; */
+    /* position:absolute;
+    top:-2px;
+    left:50px; */
+}
+.answer-content {
+    /* border:2px solid red; */
+    padding:0px 10px 0px 50px;
+}
+.add-answer-box{
+    clear:both;
+    display:none;
+}
+.add-answer-box #form{
+    border:1px solid #ccc;
+    width:70%;
+    margin:0px auto 20px auto;
+    padding:10px;
+    box-sizing:border-box;
+    padding:20px;
+    border-radius:8px;
+}
+
+.add-answer-box #form div input{
+    display:block;
+    width:90%;
+    margin:0px auto;
+    padding:5px 20px;
+    outline:none;
+    margin-bottom:20px;
+    border-radius:11px;
+    border:2px solid #ccc;
+}
+
+.add-answer-box #form button{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.add-answer-div{
+    padding:20px 0px;
+    margin-left:-10px;
+}
+.add-answer{
+    padding:0px 10px;
+    border-radius:8px;
+    transition:0.3s;
+    cursor:pointer;
+    background-color:#dbdddf;
+}
+.add-answer:hover{
+    background-color:#ebecec;
+    font-size:17px;  
+}
+
+/* designing right aside */
+
+aside#right{
+    background-color:white;
+    box-shadow:1px 1px 10px grey; 
+    width:20%;
+    border:2px solid #ccc;
+    
+    position:fixed;
+    right:15px;
+    top:100px;
+    padding:0px 5px;
+}
+aside#right h2{
+    text-align:center;
+    padding:0px 4px;
+    border-bottom:1px solid #ccc;
+}
+aside#right ul{
+    list-style:none;
+    /* border:2px solid red; */
+}
+aside#right ul li{
+    /* border:2px solid green; */
+    margin:15px;
+    border-bottom:1px solid #ccc;
+}
+aside#right ul li:hover a{
+    color:blue;
+    padding-left:2px;
+}
+aside#right ul li a{
+    /* border:2px solid black; */
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+}
+
+#knowledge{
+    background-color:white;
+    box-sizing:border-box;
+    padding:5px;
+    position:fixed;
+    top:100px;
+    left:10px;
+    /* border:2px solid red; */
+    width:20%;
+    border-radius:8px;
+    box-shadow:1px 1px 10px grey;
+}
+#knowledge h2{
+    text-align:center;
+    border-bottom:1px solid #ccc;
+}
+#knowledge ul{
+    list-style:none;
+    /* border:2px solid red; */
+}
+#knowledge ul li{
+    /* border:2px solid black; */
+    margin:10px 0px;
+    border-bottom:1px solid #ccc;
+}
+
+#knowledge ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    padding-left:4px;
+}
+#knowledge ul li:hover a{
+    color:blue;
+    padding-left:6px;
+}
+#food{
+    width:20%;
+    box-sizing:border-box;
+    background-color:white;
+    box-shadow:1px 1px 10px grey;
+    position:fixed;
+    top:380px;
+    left:10px;
+    border-radius:8px;
+    padding-top:10px;
+}
+#food h2{
+    text-align:center;
+}
+#food a img{
+    display:block;
+    width:90%;
+    margin:20px auto;
+}
+/* designing logon form */
+#login-box,#signup-box{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    z-index:5;
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+#login-form,#signup-form{
+    width:500px;
+    height:330px;
+    padding:20px;
+    background-color:white;
+    border-radius:11px;
+    box-sizing:border-box;
+    position:relative;
+}
+#signup-form{
+    height:auto;
+}
+#signup-form p{
+    margin:0px 0px 20px 20px;
+}
+
+#login-form div input,#signup-form div input[type="text"],#signup-form div input[type="email"],#signup-form div input[type="password"]{
+    width:90%;
+    height:40px;
+    /* outline:none; */
+    padding-left:10px;
+    margin:20px auto;
+    display:block;
+    border-radius:8px;
+    border:2px solid #ccc;
+}
+#login-form div,#signup-form div{
+    position:relative;
+    
+}
+#login-form div label,#signup-form div label{
+    position:absolute;
+    top:8px;
+    left:30px;
+}
+#login-form button,#signup-form button{
+    display:block;
+    margin:0px auto;
+    width:100px;
+}
+#signup-form button{
+    width:200px;
+}
+#login-form a,#signup-form a{
+    text-decoration:none;
+    margin-top:10px;
+    color:blue;
+    display:block;
+    text-align:center;
+    
+}
+#cross,#cross2{
+    position:absolute;
+    right:20px;
+    top:-15px;
+    font-size:40px;
+    transform:rotate(45deg);
+    cursor:pointer;
+}
+/* designing footer */
+footer{
+    
+    width:100%;
+    box-shadow:-1px -1px 10px grey; 
+    background-color:white;
+    height:50px;
+    overflow:hidden;
+    
+    
+}
+#follow-us{
+    float:right;
+    width:20%;
+    box-sizing: border-box;
+    padding:10px 0px 0px 0px;
+    display:flex;
+    justify-content:center;
+    
+}
+#follow-us a{
+    margin-right:20px;
+}
+#follow-us a:hover{
+    font-size:18px;
+
+}
+#copyright{
+    width:50%;
+    margin:0px auto;
+    text-align:center;
+    padding:11px 0px;
+}
+#contact-us{
+    width: 20%;
+    float:left;
+    text-align:center;
+    padding:11px 0px;
+}
+#contact-us span{
+    background-color:#F2F3F5;
+    padding:4px 10px;
+    
+    border-radius:8px;
+}
+#contact-us span:hover{
+    background-color: #c3c3c4;
+}
+#contact-us a{
+    text-decoration:none;
+    color:black;
+}
+#diet,#gym-equipments{
+    width:52%;
+    margin:40px auto;
+    background-color:white;
+    border-radius:8px;
+    box-shadow:1px 1px 10px grey;
+    padding:10px;
+    box-sizing:border-box;
+}
+#diet h1{
+    text-align:center;
+}
+#tips{
+    padding:10px 20px;
+}
+details p{
+    padding:0px 20px;
+}
+details summary{
+    padding:0px 10px;
+    background-color:#F2F3F5;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:18px;
+}
+details summary:hover{
+    border:2px solid rgb(127, 201, 250);
+}
+details{
+    margin:10px 0px;
+}
+#bulking{
+font-size:18px;
+}
+
+#bulking p{
+    margin:15px 20px;  
+    
+}
+#bulking ol,#bulking ul{
+margin-left:45px;
+}
+#bulking div{
+    background-color:#F2F3F5;
+    padding:20px 0px;
+    border-radius:11px;
+}
+
+.bulk-middle-headings{
+    font-weight:bold;
+    font-size:22px;
+}
+#gym-equipments h1{
+    text-align:center;
+}
+#gym-equipments div{
+    text-align:center;
+    /* border:2px solid black; */
+    width:70%;
+    background-color:#F2F3F5;
+    border-radius:8px;
+    margin:30px auto;
+    padding:10px;
+}
+#gym-equipments div:hover{
+    border:2px solid rgb(0, 183, 255);
+}
+#gym-equipments img{
+    width:50%;
+    /* border:2px solid red; */
+    margin:15px 0px;
+    box-shadow:1px 1px 10px grey;
+    
+
+}
+figcaption{
+    font-size:30px;
+}
+/* utility class */
+.button{
+    width:80px;
+    background-color:#1a73e8;
+    cursor:pointer;
+    border:1px solid transparent;
+    border-radius:5px;
+    font-size:16px;
+    color:white;
+}
+.button:hover{
+    background-color:#3f8cf0;
+
+}
+.questions{
+    border:2px solid #ccc;
+    margin:20px 0px;
+}
+.clearfix{
+    clear:both;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+
+/* adding responsiveness */
+@media only screen and (max-width:1050px)
+{
+    header #logo img{
+        width:128px;
+        position:absolute;
+        z-index:-1;
+        left:10px;
+        top:-20px;
+    }
+    header #logo h1{
+        /* display:inline-block; */
+        padding:6px 0px 0px 120px;
+    }
+    #hamberger{
+        display:block;
+        transition:0.2s;
+    }
+    #hamberger:hover{
+        transform:rotate(90deg);
+    }
+    #main-nav,#register{
+        display:block;
+        position:static ;
+    }
+    
+    #register{
+        width:50%;
+        margin:0px auto;
+        /* border:2px solid red; */
+        text-align:center;
+        padding:20px 0px;
+        
+    }
+    #main-nav{
+        width:70%;
+        margin:0px auto;
+        /* border:2px solid red; */
+    }
+    #main-nav ul{
+        justify-content: space-evenly;
+    }
+    
+    #knowledge,#food,aside#right,#add-question-box,#question-box-area,#diet,#gym-equipments{
+        width:80%;
+        margin:20px auto;
+        float:none;
+        position:static;
+    }
+}
